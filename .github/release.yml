@@ -1,0 +1,14 @@
+changelog:
+  exclude:
+    labels:
+      - code refactoring
+      - typo
+  categories:
+    - title: Breaking Changes 🛠
+      labels:
+        - bug
+        - enhancement
+    - title: Exciting New Features 🎉
+      labels:
+        - documentation
+        - new feature

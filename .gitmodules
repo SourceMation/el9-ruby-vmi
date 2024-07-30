@@ -1,0 +1,3 @@
+[submodule "auto_virtual_machines"]
+	path = auto_virtual_machines
+	url = git@github.com:SourceMation/auto_virtual_machines.git
