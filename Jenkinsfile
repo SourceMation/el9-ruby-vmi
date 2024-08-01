@@ -45,6 +45,7 @@ pipeline {
                         cleanWs()
                         checkout scm
                         script {
+                            sh 'git submodule update --init --recursive'
                             echo "Building ${IMAGE} on the ${PROVIDER}"
                             sh "cd auto_virtual_machines/; bash -x ./cicd.sh $PROFILE 1"
                         }
@@ -62,6 +63,7 @@ pipeline {
                         cleanWs()
                         checkout scm
                         script {
+                            sh 'git submodule update --init --recursive'
                             echo "Building ${IMAGE} on the ${PROVIDER}"
                             sh "cd auto_virtual_machines/; bash -x ./cicd.sh $PROFILE 1"
                         }
@@ -79,6 +81,7 @@ pipeline {
                         cleanWs()
                         checkout scm
                         script {
+                            sh 'git submodule update --init --recursive'
                             echo "Building ${IMAGE} on the ${PROVIDER}"
                             sh "cd auto_virtual_machines/; bash -x ./cicd.sh $PROFILE 1"
                         }
