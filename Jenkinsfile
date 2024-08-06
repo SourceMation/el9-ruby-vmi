@@ -181,6 +181,7 @@ pipeline {
                         GH_BRANCH="main"
                     }
                     steps {
+                        sleep(time: 10, unit: "SECONDS")
                         script {
                             echo "Pushing ${IMAGE}-${PROVIDER} to GitHub"
                             sh "cd auto_virtual_machines/; bash -x ./cicd.sh $PROFILE 3"
