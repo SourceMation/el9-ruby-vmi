@@ -1,4 +1,4 @@
-# EuroLinux 9 Ruby 3 VMI
+# Rocky Linux 9 with default Ruby VMI
 This repo contains virtual machine images and Jenkins pipeline to build them.  
 We offer VMware, VirtualBox and Qemu VMI for your convenience.  
 All images are built once a month using packer(packer.io) and additional scripts.
@@ -24,5 +24,8 @@ All images are built once a month using packer(packer.io) and additional scripts
 5.Start the virtual machine.  
 
 ## License
-This image uses [GPLv2](https://github.com/EuroLinux/eurolinux-9-el-release/blob/master/GPL),
-and some other open source licences that are included directly in the image.
+This image mostly uses the GPLv2 license. You can check the license of the RPM packages with:
+
+```bash
+rpm -qa --queryformat "%{name} %{license}\n"
+```
